@@ -1,0 +1,16 @@
+h1 {font-size: 18pt;}
+label
+{
+  width: 100px;             /* determine la taille de chaque label */
+  text-align: right;        /* indique que le texte sera aligné a droite */
+  display: inline-block;    /* permet d'afficher les lignes sous forme de block */
+  vertical-align: baseline  /* aligne verticalement le texte par rapport a la base de l'objet*/
+}
+
+@media screen and (max-width: 480px){ /* media query pour recupérer la largeur de l'ecran du
+navigateur et appliquer du style si la condition est respectée (largeur de 480px ici)*/
+  label{
+    text-align: center;
+    display: block; /* si la condition est validé on affiche l'ensemble en block superposés */
+  }
+}
